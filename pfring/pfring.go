@@ -9,7 +9,7 @@ package pfring
 
 /*
 // lpcap is needed for bpf
-#cgo LDFLAGS: -lpfring -lpcap
+#cgo LDFLAGS: -L/usr/local/pfring/lib -I/usr/local/pfring/include -lpfring -lpcap
 #include <stdlib.h>
 #include <pfring.h>
 #include <stdint.h>
